@@ -46,23 +46,13 @@
 </nav>
 <main class="pt-24 overflow-hidden">
 <!-- Hero Section -->
-<section class="relative px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-7 z-10">
-<span class="font-label-sm text-label-sm text-on-primary-container uppercase mb-stack-sm block">The Architect of Suspense</span>
-<h1 class="font-headline-lg text-headline-lg md:text-display-lg mb-stack-md leading-tight text-primary">About K.S. Ford</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-2 border-outline-variant pl-6 py-2">
+<section class="about-hero relative px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="about-hero__content relative z-10 max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase mb-stack-sm block tracking-widest">The Architect of Suspense</span>
+<h1 class="font-headline-lg text-headline-lg md:text-display-lg mb-stack-md leading-tight">About K.S. Ford</h1>
+<p class="font-body-lg text-body-lg max-w-2xl border-l-2 pl-6 py-2">
                         Navigating the labyrinth of secrets and memory, K.S. Ford crafts atmospheric tales where the past is never truly buried.
                     </p>
-</div>
-<div class="lg:col-span-5 relative mt-12 lg:mt-0">
-<div class="relative w-full aspect-square overflow-hidden rounded-lg shadow-2xl border-4 border-surface">
-<img alt="Author K.S. Ford Portrait" class="w-full h-full object-cover" src="/assets/ks-ford/author/author-closeup-portrait.png">
-<div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
-</div>
-<!-- Decorative Element -->
-<div class="absolute -bottom-8 -left-8 w-32 h-32 bg-tertiary-fixed-dim/20 rounded-full blur-3xl -z-10"></div>
-</div>
 </div>
 </section>
 <!-- Main Bio Section -->
@@ -97,25 +87,25 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
 <!-- Card 1 -->
-<div class="bg-surface border border-outline-variant p-stack-lg book-lift flex flex-col items-start h-full">
+<div class="bg-surface border border-outline-variant p-stack-lg book-lift motif-card flex flex-col items-start h-full">
 <span class="material-symbols-outlined text-primary-container mb-4 text-3xl">visibility_off</span>
 <h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Hidden Truths</h3>
 <p class="font-body-md text-body-md text-on-surface-variant flex-grow">The architecture of lies that keeps a community standing, until the first crack appears.</p>
 </div>
 <!-- Card 2 -->
-<div class="bg-surface-container-high border border-outline-variant p-stack-lg book-lift flex flex-col items-start h-full">
+<div class="bg-surface-container-high border border-outline-variant p-stack-lg book-lift motif-card flex flex-col items-start h-full">
 <span class="material-symbols-outlined text-primary-container mb-4 text-3xl">cottage</span>
 <h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Village Secrets</h3>
 <p class="font-body-md text-body-md text-on-surface-variant flex-grow">The heavy silence of rural life where everyone knows your name, but no one knows your story.</p>
 </div>
 <!-- Card 3 -->
-<div class="bg-surface border border-outline-variant p-stack-lg book-lift flex flex-col items-start h-full">
+<div class="bg-surface border border-outline-variant p-stack-lg book-lift motif-card flex flex-col items-start h-full">
 <span class="material-symbols-outlined text-primary-container mb-4 text-3xl">broken_image</span>
 <h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Betrayal &amp; Consequence</h3>
 <p class="font-body-md text-body-md text-on-surface-variant flex-grow">A single choice, made in the dark, that ripples through generations with lethal force.</p>
 </div>
 <!-- Card 4 -->
-<div class="bg-surface-container-high border border-outline-variant p-stack-lg book-lift flex flex-col items-start h-full">
+<div class="bg-surface-container-high border border-outline-variant p-stack-lg book-lift motif-card flex flex-col items-start h-full">
 <span class="material-symbols-outlined text-primary-container mb-4 text-3xl">shield_person</span>
 <h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Survival &amp; Silence</h3>
 <p class="font-body-md text-body-md text-on-surface-variant flex-grow">The strength required to hold a secret when the world demands a confession.</p>
@@ -152,14 +142,12 @@
 <!-- TODO: Add a confirmed essay URL if these entries become full articles. -->
 <a aria-disabled="true" class="inline-block bg-surface text-primary px-8 py-3 rounded font-label-lg hover:bg-tertiary-fixed-dim transition-colors" data-safe-placeholder href="#">Read More</a>
 </div>
-<div class="absolute top-4 right-4 flex gap-2">
-<button aria-label="Previous story" class="w-10 h-10 bg-surface/90 text-primary border border-outline-variant rounded-sm hover:bg-tertiary-fixed-dim transition-colors flex items-center justify-center" data-carousel-prev type="button">
+<button aria-label="Previous story" class="about-carousel-button about-carousel-button--prev" data-carousel-prev type="button">
 <span class="material-symbols-outlined">chevron_left</span>
 </button>
-<button aria-label="Next story" class="w-10 h-10 bg-surface/90 text-primary border border-outline-variant rounded-sm hover:bg-tertiary-fixed-dim transition-colors flex items-center justify-center" data-carousel-next type="button">
+<button aria-label="Next story" class="about-carousel-button about-carousel-button--next" data-carousel-next type="button">
 <span class="material-symbols-outlined">chevron_right</span>
 </button>
-</div>
 </div>
 <!-- Side Grid -->
 <div class="lg:col-span-4 flex flex-col gap-8 h-full">
