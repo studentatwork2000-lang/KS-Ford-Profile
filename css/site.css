@@ -2,6 +2,13 @@
   overflow: hidden;
 }
 
+html,
+body,
+body.bg-background,
+body.bg-surface {
+  background-color: #fbf4ec !important;
+}
+
 .ks-book-modal[hidden] {
   display: none;
 }
@@ -218,18 +225,20 @@
 /* Targeted visual refinements: Books shop cards */
 .shop-book-card {
   min-height: 0;
-  padding: 18px;
+  padding: 16px;
 }
 
 .shop-book-card__image {
-  aspect-ratio: 0.82;
-  margin-bottom: 14px;
+  height: 172px;
+  margin-bottom: 12px;
+  padding: 6px;
 }
 
 .shop-book-card__cover {
-  max-height: 180px;
-  max-width: 78%;
+  max-height: 160px;
+  max-width: 92%;
   width: auto;
+  object-fit: contain;
 }
 
 .shop-book-card__body {
@@ -263,17 +272,17 @@
 
 /* Targeted visual refinements: About page */
 .about-hero {
-  /* TODO: Replace with provided About hero background image. */
   min-height: clamp(430px, 56vw, 620px);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: clamp(28px, 5vw, 72px);
   overflow: hidden;
   border: 1px solid #d3c3c0;
   border-radius: 0.5rem;
   background-image:
     linear-gradient(90deg, rgba(39, 19, 16, 0.84) 0%, rgba(39, 19, 16, 0.62) 42%, rgba(39, 19, 16, 0.18) 100%),
-    url('/assets/ks-ford/author/about-hero-background.jpg'),
-    url('/assets/ks-ford/author/author-closeup-portrait.png');
+    url('/assets/ks-ford/author/about-hero-background.jpg');
   background-position: center;
   background-size: cover;
   box-shadow: 0 24px 70px rgba(39, 19, 16, 0.14);
@@ -288,8 +297,26 @@
 }
 
 .about-hero__content {
+  flex: 1 1 58%;
   padding: clamp(56px, 8vw, 112px) 0;
   color: #fef8f1;
+}
+
+.about-hero__portrait {
+  flex: 0 0 clamp(260px, 28vw, 340px);
+  max-width: 340px;
+  margin: 0;
+  border: 1px solid rgba(255, 222, 165, 0.5);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: rgba(254, 248, 241, 0.08);
+  box-shadow: 0 24px 60px rgba(39, 19, 16, 0.34);
+}
+
+.about-hero__portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .about-hero__content h1,
@@ -439,10 +466,23 @@
 @media (max-width: 767px) {
   .about-hero {
     min-height: 520px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
     background-image:
       linear-gradient(180deg, rgba(39, 19, 16, 0.72), rgba(39, 19, 16, 0.82)),
-      url('/assets/ks-ford/author/about-hero-background.jpg'),
-      url('/assets/ks-ford/author/author-closeup-portrait.png');
+      url('/assets/ks-ford/author/about-hero-background.jpg');
+  }
+
+  .about-hero__content {
+    padding: 48px 0 0;
+  }
+
+  .about-hero__portrait {
+    flex-basis: auto;
+    width: min(250px, 76vw);
+    margin-bottom: 40px;
   }
 
   .about-carousel-button {
