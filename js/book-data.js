@@ -4,35 +4,60 @@ window.KSFordBooks = {
     tag: "Lodge Looks Back, Vol. I",
     description: "A haunting tale of mystery and the weight of secrets in a small village.",
     image: "/assets/ks-ford/books/lodge-looks-back/lodge-looks-back-01-a-stranger-in-the-village-cover.png",
-    links: []
+    links: [
+      {
+        label: "Waterstones",
+        url: "https://www.waterstones.com/book/a-stranger-in-the-village/k-s-ford/9781805175476"
+      }
+    ]
   },
   "a-stranger-complete-story": {
     title: "A Stranger in the Village: The Complete Story",
     tag: "Featured Release",
     description: "Memory is a fragile construct, easily shattered by the weight of old secrets. A single arrival in a quiet community brings consequences when truths refuse to stay buried.",
     image: "/assets/ks-ford/books/lodge-looks-back/a-stranger-in-the-village-complete-story-3d-cover.png",
-    links: []
+    links: [
+      {
+        label: "Waterstones",
+        url: "https://www.waterstones.com/book/a-stranger-in-the-village/k-s-ford/9781805175476"
+      }
+    ]
   },
   "death-must-come-naturally": {
     title: "Death Must Come Naturally",
     tag: "Lodge Looks Back, Vol. II",
     description: "The second volume in the series, exploring fate and the inevitable.",
     image: "/assets/ks-ford/books/lodge-looks-back/lodge-looks-back-03-death-must-come-naturally-cover.png",
-    links: []
+    links: [
+      {
+        label: "Waterstones",
+        url: "https://www.waterstones.com/book/death-must-come-naturally/k-s-ford/9781803524689"
+      }
+    ]
   },
   "no-kiss-for-the-dying": {
     title: "No Kiss for the Dying",
     tag: "Lodge Looks Back, Vol. III",
     description: "A chilling exploration of betrayal and the darkness within us all.",
     image: "/assets/ks-ford/books/lodge-looks-back/lodge-looks-back-04-no-kiss-for-the-dying-cover.png",
-    links: []
+    links: [
+      {
+        label: "Waterstones",
+        url: "https://www.waterstones.com/book/no-kiss-for-the-dying/k-s-ford/9781803524696"
+      }
+    ]
   },
   "the-fifth-man": {
     title: "The Fifth Man",
     tag: "Lodge Looks Back, Vol. IV",
     description: "The truth behind the fifth player in a game of deadly consequences.",
     image: "/assets/ks-ford/books/lodge-looks-back/lodge-looks-back-05-the-fifth-man-cover.png",
-    links: []
+    links: [
+      {
+        label: "Waterstones",
+        url: "https://www.waterstones.com/book/the-fifth-man/k-s-ford/9781805173144"
+      }
+    ]
   },
   "the-book-of-lodge": {
     title: "The Book of Lodge",
@@ -62,7 +87,5 @@ window.KSFordBooks = {
   }
 };
 
-// TODO: Add verified direct Waterstones URLs for:
-// A Stranger in the Village, Death Must Come Naturally, No Kiss for the Dying,
-// The Fifth Man, The Woman Who Loves, and Hazel. Do not replace these with
-// generic Waterstones search or homepage URLs.
+// TODO: Add verified direct Waterstones URLs for The Woman Who Loves and Hazel.
+// Do not replace these with generic Waterstones search or homepage URLs.
