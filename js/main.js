@@ -1,9 +1,9 @@
 (function () {
   const SOCIAL_LINKS = {
-    // TODO: Replace null values with confirmed public profile URLs only.
-    instagram: null,
-    facebook: null,
-    threads: null,
+    instagram: "https://www.instagram.com/k.s.ford/",
+    facebook: "https://www.facebook.com/KeithSalterFordAuthor/",
+    // TODO: Verify Threads URL before final client delivery.
+    threads: "https://www.threads.net/@k.s.ford",
     email: null
   };
 
@@ -104,7 +104,7 @@
     (book.links || []).forEach((link) => {
       if (!link.url) return;
       const anchor = document.createElement("a");
-      anchor.className = "ks-book-modal__link";
+      anchor.className = "ks-book-modal__link book-link-pill";
       anchor.href = link.url;
       anchor.target = "_blank";
       anchor.rel = "noopener";
